@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Calculator</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>Expense Calculator</header>
+        <div>
+            <article class="results-container">
+                <p id="income-display">Total Income</p>
+                <p>-</p>
+                <p id="expense-display">Total Expense</p>
+                <p>=</p>
+                <p>Total Balance</p>
+            </article>
+        </div>
+        <hr>
+        <main>
+            <div>
+                <article class="income-container">
+                    <h1>Income</h1>
+                    <form id="income-form">
+                        <input id="income" type="number"  placeholder="Enter Your Income Here...">
+                        <button id="add-income-btn">Add Income</button>
+                    </form>
+                </article>
+                <hr>
+                <article class="expense-container">
+                    <h1>Expenses</h1>
+                    <form id="expense-form">
+                        <input id="expense-name" type="text" placeholder="Enter Expense Name Here...">
+                        <input id="expense-amount" type="number" placeholder="Enter Amount of the Expense Here...">
+                        <button>Add Expense</button>
+                    </form>
+                </article>
+                <details>
+                    <summary>Check The List of Expenses</summary>
+                    <table >
+                        <thead>
+                            <tr>
+                                <th>Expense Name</th>
+                                <th>Expense Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="expense-table-data">
+                        </tbody>
+                    </table>
+                </details>
+                <hr>
+            </div>
+    
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
